@@ -1,0 +1,52 @@
+:root {
+  font-size: 62.5%;
+
+  --text-color: #f1f1f1;
+  --text-hover-color: #02799d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: #222222;
+  background-image: url(./assets/images/page-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* .wrapper nav {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+} */
+
+.wrapper nav ul {
+  display: flex;
+  height: 12rem;
+  gap: 3.2rem;
+
+  font-size: 2.1rem;
+  line-height: 2.2rem;
+
+  padding-inline: 7.2rem;
+  align-items: center;
+}
+
+.wrapper ul li a {
+  color: var(--text-color);
+}

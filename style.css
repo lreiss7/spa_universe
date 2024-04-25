@@ -1,7 +1,7 @@
 :root {
   font-size: 62.5%;
-
-  --text-color: #f1f1f1;
+  --text-color: #E1E1E6;
+  --text-nav: #C4C4CC;
   --text-hover-color: #02799d;
 }
 
@@ -17,36 +17,141 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
   font-style: normal;
-  font-weight: 700;
 
   width: 100vw;
   height: 100vh;
 
-  background: #222222;
+  
   background-image: url(./assets/images/page-1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
+  
 }
 
-/* .wrapper nav {
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper nav {
   display: flex;
   align-items: center;
   gap: 3.2rem;
-} */
+}
 
 .wrapper nav ul {
   display: flex;
-  height: 12rem;
-  gap: 3.2rem;
+  align-items: center;
 
+  height: 12rem;
+  padding-inline: 7.2rem;
+
+  gap: 3.2rem;
   font-size: 2.1rem;
   line-height: 2.2rem;
-
-  padding-inline: 7.2rem;
-  align-items: center;
 }
 
 .wrapper ul li a {
+  opacity: 0.6;
+  color: var(--text-color);
+
+  transition: opacity 0.3s ease;
+}
+
+.wrapper ul li a:hover {
+  opacity: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+
+  padding-inline: 10rem;
+  padding-bottom: 16rem;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.4rem;
+}
+
+main #app h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
   color: var(--text-color);
 }
+
+main #app .wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+main #app .wrap .home {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+main #app .wrap .home h1 {
+  text-align: center;
+}
+
+main #app p {
+  max-width: 65rem;
+  color: var(--text-color);
+}
+
+main #app button {
+  margin-inline: auto;
+  padding: 1.2rem 3.2rem;
+
+  text-transform: uppercase;
+  color: var(--text-color);
+  cursor: pointer;
+
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  background: transparent;
+  transition: background 0.5s ease; 
+}
+
+main #app button:hover {
+  background: #ffffff;
+  color: var(--text-hover-color);
+}
+
+main #app .error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  gap: 1rem;
+
+  width: 100%;
+}
+
+main #app .error-page h1 {
+  font-size: 6rem;
+  color: var(--text-color);
+}
+
+main #app .error-page img {
+  width: 40rem;
+  height: auto;
+
+  opacity: 0.5;
+}
+
